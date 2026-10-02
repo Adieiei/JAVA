@@ -4,12 +4,11 @@ public class AYesOrYes{
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         while(t-->0){
-            String s = sc.nextLine();
-            if(s =="YES" || s =="Yes" || s =="YeS" || s =="YEs" || s =="yES" || s =="yeS" || s =="yEs" || s =="yes"){
+            String s = sc.next();
+            if(s.equalsIgnoreCase("YES"))
                 System.out.println("YES");
-            }else{
+            else
                 System.out.println("NO");
-            }
         }
     }
 }
